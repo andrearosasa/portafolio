@@ -1,113 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrea Rosas | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andrea Rosas | Portafolio Profesional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <header class="header">
-    <a href="#" class="logo">Andrea</a>
-    <i class="fa-solid fa-bars" id="menu-icon"></i>
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#resume">Resume</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Andrea Rosas</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#curriculum">Currículum</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
+    </div>
   </header>
 
-  <!-- HOME -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hi, I'm <span>Andrea Rosas</span></h1>
-      <h3 class="typing-text">I'm a <span class="typed-text"></span></h3>
-      <p>Data lover, digital explorer, and passionate about visual storytelling.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
-    <div class="home-img">
-      <img src="main.jpg" alt="Andrea Rosas" />
+  <!-- Sección Inicio -->
+  <section id="inicio" class="section intro">
+    <div class="container">
+      <h2>Hola, soy <span class="highlight">Andrea Rosas</span></h2>
+      <p class="typing">Analista de Datos | Visualización | Automatización</p>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-      I'm Andrea, passionate about data, dashboards, and storytelling with a clean, sharp design.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-container">
-      <!-- Ejemplo -->
-      <div class="skill-box">
-        <i class="fa-solid fa-chart-line"></i>
-        <h3>Tableau</h3>
-      </div>
-      <div class="skill-box">
-        <i class="fa-solid fa-database"></i>
-        <h3>SQL</h3>
-      </div>
-      <div class="skill-box">
-        <i class="fa-brands fa-python"></i>
-        <h3>Python</h3>
-      </div>
+  <!-- Sobre Mí -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy egresada de Ingeniería de Sistemas con experiencia en análisis de datos, visualización interactiva en Tableau, automatización con Python y procesos ETL en KNIME. Me apasiona transformar datos en decisiones útiles y comunicar hallazgos de forma clara y efectiva.
+      </p>
     </div>
   </section>
 
-  <!-- RESUME -->
-  <section class="resume" id="resume">
-    <h2 class="section-title">Resume</h2>
-    <p class="resume-text">
-      [Aquí irá tu experiencia laboral y educación relevante]
-    </p>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
-    <h2 class="section-title">Projects</h2>
-    <div class="portfolio-container">
-      <!-- Ejemplo de proyecto -->
-      <div class="portfolio-item">
-        <h3>Casino Data Dashboard</h3>
-        <p>Interactive dashboard in Tableau for slot machine analysis.</p>
-      </div>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Habilidades Técnicas</h2>
+      <ul class="skills-list">
+        <li>Python, SQL, Web Scraping</li>
+        <li>Tableau (Desktop, Prep, Bridge)</li>
+        <li>Power BI, Pandas, KNIME</li>
+        <li>PostgreSQL, SQL Server</li>
+        <li>Excel Avanzado, Office 365</li>
+        <li>Scrum, Soporte TI, SAP</li>
+      </ul>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <form action="#">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <!-- Curriculum -->
+  <section id="curriculum" class="section">
+    <div class="container">
+      <h2>Currículum</h2>
+
+      <h3>Experiencia Profesional</h3>
+      <div class="job">
+        <h4>Auxiliar de Procesamiento de Datos – Gladcon Group</h4>
+        <p><em>Junio 2023 – Actualidad</em></p>
+        <ul>
+          <li>Automatización y limpieza de datos con Python y web scraping</li>
+          <li>Dashboards avanzados en Tableau con cálculos personalizados</li>
+          <li>Flujos ETL con KNIME y análisis de tendencias</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Analista de Soporte SMS / Datos Jr – Mowa Consultora</h4>
+        <p><em>Mayo 2022 – Mayo 2023</em></p>
+        <ul>
+          <li>Gestión de tareas técnicas, validación de procesos y soporte</li>
+          <li>Documentación y mejora continua de herramientas internas</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h4>Asistente Administrativo – Micro Red Iquipi</h4>
+        <p><em>Junio 2021 – Dic 2021</em></p>
+      </div>
+
+      <h3>Formación Académica</h3>
+      <p>Ingeniería de Sistemas – Universidad César Vallejo (2014 – 2021)</p>
+      <p>Inglés – Británico (Intermedio)</p>
+
+      <h3>Certificaciones Destacadas</h3>
+      <ul>
+        <li>Python Básico, Tableau Básico, SQL Intermedio – DataCamp</li>
+        <li>Introduction to KNIME – DataCamp</li>
+        <li>Scrum Foundation (CertiProf)</li>
+        <li>Especialista en Aplicaciones Informáticas – UCV</li>
+      </ul>
+    </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Andrea Rosas. All rights reserved.</p>
+  <!-- Portafolio -->
+  <section id="portafolio" class="section">
+    <div class="container">
+      <h2>Portafolio</h2>
+      <p>Próximamente incluiré visualizaciones, automatizaciones y dashboards que reflejan mi experiencia en análisis de datos reales del sector empresarial.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¿Quieres colaborar conmigo o ver más de mi trabajo? Escríbeme a:</p>
+      <p><strong>Correo:</strong> tu_correo@email.com</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/andrea-rosas</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Andrea Rosas. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
