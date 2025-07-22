@@ -1,30 +1,31 @@
-const typingText = document.querySelector(".typing-text span");
-const textArray = ["Data Analyst", "Web Scraper", "Tableau Developer", "Python Enthusiast"];
-let textIndex = 0;
+const roles = ["Data Analyst", "Web Scraper", "Dashboard Builder", "SQL Developer"];
+let index = 0;
 let charIndex = 0;
+let typing = true;
 
-function type() {
-  if (charIndex < textArray[textIndex].length) {
-    typingText.textContent += textArray[textIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 2000);
-  }
+const typingSpan = document.querySelector(".typing-text span");
+
+function typeText() {
+    if (typing) {
+        if (charIndex < roles[index].length) {
+            typingSpan.textContent += roles[index].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100);
+        } else {
+            typing = false;
+            setTimeout(typeText, 1500);
+        }
+    } else {
+        if (charIndex > 0) {
+            typingSpan.textContent = roles[index].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(typeText, 50);
+        } else {
+            typing = true;
+            index = (index + 1) % roles.length;
+            setTimeout(typeText, 500);
+        }
+    }
 }
 
-function erase() {
-  if (charIndex > 0) {
-    typingText.textContent = textArray[textIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 50);
-  } else {
-    textIndex++;
-    if (textIndex >= textArray.length) textIndex = 0;
-    setTimeout(type, 200);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  if (textArray.length) setTimeout(type, 1000);
-});
+document.addEventListener("DOMContentLoaded", typeText);
