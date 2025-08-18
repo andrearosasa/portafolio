@@ -138,14 +138,14 @@ span{
     border-radius: 50%;
 }
 
-.home-img img{
-    position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
+  .home-img img{
+      position: relative;
+      width: 32vw;
+      border-radius: 50%;
+      box-shadow: 0 0 25px #b74b4b;
+      cursor: pointer;
+      transition: 0.2s linear;
+  }
 
 .home-img img:hover{
     font-size: 1.8rem;
@@ -188,12 +188,12 @@ span{
     cursor: pointer;
 }
 
-.btn:hover{
-    transform: scale3d(1.03);
-    background-color: #b74b4b;
-    color: black;
-    box-shadow: 0 0 25px #b74b4b;
-}
+  .btn:hover{
+      transform: scale(1.03);
+      background-color: #b74b4b;
+      color: black;
+      box-shadow: 0 0 25px #b74b4b;
+  }
 
 .typing-text{
     font-size: 34px;
@@ -211,16 +211,16 @@ span{
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
+  .typing-text span::after{
+      content: "";
+      background-color: black;
+      position: absolute;
+      width: calc(100% + 8px);
+      height: 100%;
+      border-left: 3px solid black;
+      right: -8px;
+      animation: cursor 0.6s infinite;
+  }
 
 @keyframes cursor{
     to{
